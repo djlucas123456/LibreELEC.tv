@@ -1,0 +1,12 @@
+PKG_NAME="libyaml"
+PKG_VERSION="0.2.2"
+PKG_SHA256="46bca77dc8be954686cff21888d6ce10ca4016b360ae1f56962e6882a17aa1fe"
+PKG_LICENSE="MIT"
+PKG_SITE="http://pyyaml.org"
+PKG_URL="https://github.com/yaml/${PKG_NAME}/archive/${PKG_VERSION}.tar.gz"
+PKG_DEPENDS_TARGET="toolchain"
+PKG_LONGDESC="yaml is the next generation YAML parser and emitter"
+PKG_TOOLCHAIN="autotools"
+PKG_BUILD_FLAGS="+pic"
+
+PKG_CONFIGURE_OPTS_TARGET="--disable-shared --enable-static"
