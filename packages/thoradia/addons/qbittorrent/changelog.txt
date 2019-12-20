@@ -1,0 +1,2 @@
+- qBittorent version 4.2.1
+- Important: password is reset to default password
