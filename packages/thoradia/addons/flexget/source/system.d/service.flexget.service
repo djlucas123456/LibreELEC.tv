@@ -1,0 +1,13 @@
+[Unit]
+Description=FlexGet
+After=multi-user.target network-online.target
+Requires=multi-user.target network-online.target
+
+[Service]
+ExecReload=/bin/sh /storage/.kodi/addons/service.flexget/bin/flexget.start daemon reload
+ExecStart=/bin/sh /storage/.kodi/addons/service.flexget/bin/flexget.start daemon start
+ExecStop=/bin/sh /storage/.kodi/addons/service.flexget/bin/flexget.start daemon stop
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
