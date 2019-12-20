@@ -1,0 +1,15 @@
+[Unit]
+Description=Mono installer
+After=multi-user.target
+Before=service.jackett.service service.lidarr.service service.radarr.service service.sonarr.service service.webgrabplus.service
+Wants=multi-user.target service.jackett.service service.lidarr.service service.radarr.service service.sonarr.service service.webgrabplus.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /storage/.kodi/addons/tools.mono/bin/tools.mono.install
+RemainAfterExit=true
+Restart=no
+
+[Install]
+RequiredBy=service.jackett.service service.lidarr.service service.radarr.service service.sonarr.service service.webgrabplus.service
+WantedBy=multi-user.target
