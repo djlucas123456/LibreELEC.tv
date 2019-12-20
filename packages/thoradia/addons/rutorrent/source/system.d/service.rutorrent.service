@@ -1,0 +1,12 @@
+[Unit]
+Description=ruTorrent
+After=multi-user.target network-online.target
+Requires=multi-user.target network-online.target
+
+[Service]
+Type=forking
+ExecStart=/bin/sh /storage/.kodi/addons/service.rutorrent/bin/rutorrent.start
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
