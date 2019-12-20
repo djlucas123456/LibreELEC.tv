@@ -1,0 +1,14 @@
+[Unit]
+Description=rTorrent
+After=multi-user.target network-online.target
+Requires=multi-user.target network-online.target
+
+[Service]
+Type=forking
+KillMode=none
+ExecStart=/bin/sh /storage/.kodi/addons/service.rtorrent/bin/rtorrent-ctl start
+ExecStop=/bin/sh /storage/.kodi/addons/service.rtorrent/bin/rtorrent-ctl stop
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
