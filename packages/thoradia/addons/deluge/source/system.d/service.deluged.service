@@ -1,0 +1,10 @@
+[Unit]
+Description=Deluge daemon
+After=multi-user.target network-online.target
+Requires=multi-user.target network-online.target
+
+[Service]
+ExecStart=/bin/sh /storage/.kodi/addons/service.deluge/bin/deluged.start
+
+[Install]
+WantedBy=multi-user.target

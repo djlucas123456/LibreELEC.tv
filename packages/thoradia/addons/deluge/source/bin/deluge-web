@@ -1,0 +1,7 @@
+#!/bin/sh
+. /etc/profile
+oe_setup_addon service.deluge
+
+LD_LIBRARY_PATH="${ADDON_DIR}/libs:${LD_LIBRARY_PATH}" \
+PYTHONPATH="${ADDON_DIR}/libs:${PYTHONPATH}" \
+python "${ADDON_DIR}/libs/bin/deluge-web" "${@}"
