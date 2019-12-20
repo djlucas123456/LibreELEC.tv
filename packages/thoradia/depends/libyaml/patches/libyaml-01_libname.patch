@@ -1,0 +1,12 @@
+diff -Naur libyaml-0.2.2/CMakeLists.txt libyaml-0.2.2-libname/CMakeLists.txt
+--- libyaml-0.2.2/CMakeLists.txt	2019-03-13 02:04:00.000000000 +0100
++++ libyaml-0.2.2-libname/CMakeLists.txt	2020-01-06 20:54:30.289199550 +0100
+@@ -8,7 +8,7 @@
+ set (YAML_VERSION_STRING "${YAML_VERSION_MAJOR}.${YAML_VERSION_MINOR}.${YAML_VERSION_PATCH}")
+ 
+ option(BUILD_SHARED_LIBS "Build libyaml as a shared library" OFF)
+-option(YAML_STATIC_LIB_NAME "base name of static library output" yaml)
++set(YAML_STATIC_LIB_NAME "yaml" CACHE STRING "Base name of static library output")
+ 
+ #
+ # Output directories for a build tree
