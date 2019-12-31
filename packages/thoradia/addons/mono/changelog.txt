@@ -1,0 +1,2 @@
+- Mono version 6.8.0.105
+- Disable libraries, without compiler server
