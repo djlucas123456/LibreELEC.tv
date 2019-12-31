@@ -1,0 +1,1 @@
+- libmediainfo-shared version 19.09
