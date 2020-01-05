@@ -1,0 +1,1 @@
+- Bazarr version 0.8.4.2
