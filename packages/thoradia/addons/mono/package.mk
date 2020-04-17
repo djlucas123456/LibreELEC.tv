@@ -2,7 +2,7 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="mono"
-PKG_VERSION="6.8.0.115"
+PKG_VERSION="6.8.0.105"
 PKG_SHA256="d00852822525e36f9f8b3e0f537d3a41c7a718cac22d06fc63ea64988877c2ea"
 PKG_REV="115"
 PKG_ARCH="any"
